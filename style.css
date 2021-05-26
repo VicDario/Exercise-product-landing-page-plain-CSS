@@ -47,11 +47,25 @@ main p > span {
 
 main .main_article {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
+}
+
+main .main_article--images {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+main .main_article--images .sub-images {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
 }
 .image-big {
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-image: url(./assets/product3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,7 +74,7 @@ main .main_article {
 .image-small {
     width: 30%;
     height: 200px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -75,4 +89,39 @@ main .main_article {
 
 .image-three {
     background-image: url(./assets/product3.jpeg);
+}
+
+main .main_article--description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main .main_article--description h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #333333;
+    padding-bottom: 30px;
+}
+main .main_article--description h2 + h2{
+    font-size: 3.6rem;
+    width: 100%;
+    border-bottom: 1px solid #e4dede;
+    margin-bottom: 30px;
+}
+
+main .main_article--description p {
+    font-size: 1.8rem;
+    color: #82817e;
+    padding-bottom: 20px;
+}
+
+main .main_article--description .button-buy {
+    width: 200px;
+    font-size: 2rem;
+    background-color: #3e3e3f;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 20px;
 }
